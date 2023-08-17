@@ -3,19 +3,17 @@
 Projeto em grupo para a matéria de Desenvolvimento Web do professor João Ronaldo 
 
 ## Integrantes
-		1. Pessoa 1
-		2. Pessoa 2
-		3. Pessoa 3
-		4. Pessoa 4
-		5. Pessoa 5
+		1. Ana Carolina - 202302377572
+		2. Paulo Santos - 202304027196
+		3. Pedro Daniel - 202302892523
 		
 ## Nome do Grupo
 
-O nome escolhido pelo grupo foi: 
+O nome escolhido pelo grupo foi: Polar Roupas
 
 ## Tema Escolhido
 
-O grupo resolveu escolher o tema de desenvolver uma página web sobre uma lavanderia, por conta de um dos integrantes do grupo trabalhar em uma lavanderia que está precisando desenvolver um site, unindo assim, o útil ao agradável. 
+O grupo resolveu escolher o tema de desenvolver uma página web sobre uma loja de roupas de frio.
 
 
 
