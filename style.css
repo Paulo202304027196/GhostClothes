@@ -55,3 +55,12 @@ header{
     transition: all .5s ease;
 }
 
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat();
+    align-items: center;
+    gap: 2rem;
+}
