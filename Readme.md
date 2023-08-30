@@ -4,8 +4,9 @@ Projeto em grupo para a matéria de Desenvolvimento Web do professor João Ronal
 
 ## Integrantes
 		1. Ana Carolina - 202302377572
-		2. Paulo Santos - 202304027196
-		3. Pedro Daniel - 202302892523
+		2. Mauricio Joviano - 202302381952
+		3. Paulo Santos - 202304027196
+		4. Pedro Daniel - 202302892523
 		
 ## Nome do Grupo
 
