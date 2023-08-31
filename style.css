@@ -6,23 +6,20 @@
     text-decoration: none;    
 }
 
-header{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 8%;
+.display-4 {
+    color: 	#B22222;
+}
+
+.subtitulo {
+    color: 	#FA8072;
 }
 
 .logo{
-    display: flex;
-    align-items: center;
+    padding-bottom: .5rem!important;
+    padding-top: .5rem!important;
+    display: inline-block!important;
     color: var(--tex-color);
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -38,8 +35,6 @@ header{
 }
 
 .header-icons{
-    display: flex;
-    align-items: center;
 }
 
 #menu{
