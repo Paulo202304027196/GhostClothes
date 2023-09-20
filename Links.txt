@@ -1,3 +1,35 @@
 https://prod.liveshare.vsengsaas.visualstudio.com/join?87B187811995292F86D18B7CA3BDA5BF7347
 
 https://www.figma.com/team_invite/redeem/QqncxkW4igKjFf3eMAOrgz
+
+<?php
+
+// Pega Dados do Formulário
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+
+// Conecta com o DataBase
+$dsn = 'mysql:host=localhost;dbname=my_database';
+$username = 'root';
+$password = 'password';
+$db = new PDO($dsn, $username, $password);
+
+// Cria uma Declaração Preparada
+$stmt = $db->prepare('INSERT INTO form_data (name, email, message) VALUES (:name, :email, :message)');
+
+// Definir os parâmetros
+$stmt->bindParam(':name', $name);
+$stmt->bindParam(':email', $email);
+$stmt->bindParam(':message', $message);
+
+// Executa a Declaraçao
+$stmt->execute();
+
+// Fecha conexão
+$db = null;
+
+// Redireciona o usuário após envio do formulário
+header('Location: index.html');
+
+?>
