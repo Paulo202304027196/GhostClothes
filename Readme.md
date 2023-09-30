@@ -17,9 +17,4 @@ O nome escolhido pelo grupo foi: Ghost Clothes
 O grupo resolveu escolher o tema de desenvolver uma página web sobre uma loja de roupas.
 
 
-
-
-## 
-
-
 __*Este Projeto foi feito em grupo para a matéria de Desenvolvimento Web do professor João Ronaldo e publicado no GitHub diretamente pelo Visual Studio Code.*__ 
