@@ -5,3 +5,18 @@
 .LANCAMENTOS {
     align-items: center;
 }
+
+
+.carousel-item{
+    height: 50rem !important;
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding-bottom: 50px;
+}
