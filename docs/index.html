@@ -1,122 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://getbootstrap.com/docs/5.0/examples/carousel/carousel.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Young+Serif" rel="stylesheet">
-  <title>Ghost Clothes</title>
-  <link href="./imgs/ghost1.png" rel="icon">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cache-control" content="private">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta name="copyright" content="₢ 2023 Equipe Ghost Clothes">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./imgs/ghost1.png" type="image/png">
 
-  <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary" style="z-index: 999;"> <!--HEADER-->
-    <div class="container-fluid">
-      <a class="navbar-brand" href="./index.html">
-        <img src="./imgs/Logo.png" alt="Logo" width="160" height="60" class="d-inline-block align-text-top">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
-      <span class="navbar-toggler-icon"></span>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sobre Nós</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contatos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="catalogo.html">Roupas</a>
-          </li>
+
+    <title>Ghost Clothes</title>
+  </head>
+  <body>
+    <!--Barra de Navegação-->
+    <header>
+      <nav>
+        <a class="logo" href="./index.html">Ghost Clothes</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="./index.html">Ínicio</a></li>
+          <li><a href="./sobre.html">Sobre</a></li>
+          <li><a href="./catalogo.html">Produtos</a></li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+      </nav>
+    </header>
+    <br><br>
+    <footer class="text-body-secondary py-5">
+      <div class="container">
       </div>
-    </div>
-  </nav>
-
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
-    </div>
-
-    <div class="carousel-inner">
-      <div class="carousel-item" style="background-image:url(./imgs/carrosel3.png)">
-        <div class="container">
-          <div class="carousel-caption">
-            <p><a class="btn btn-lg btn-primary" href="#">Checar roupas</a></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-item active" style="background-image:url(./imgs/moda_feminina2.png)">
-        <div class="container">
-          <div class="carousel-caption">
-            <p><a class="btn btn-lg btn-primary" href="#">Checar roupas</a></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-item" style="background-image:url(./imgs/moda_masculina.png)">
-        <div class="container">
-          <div class="carousel-caption">
-            <p><a class="btn btn-lg btn-primary" href="#">Checar roupas</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-  <div class="row row-cols-1 row-cols-md-3 g-4"> <!--NOVIDADES-->
-    <div class="col">
-      <div class="card h-100">
-        <img src="./imgs/ghostface.png" class="card-img-top" alt="IMG1" width="1200" height="600">
-        <div class="card-body">
-          <h5 class="card-title">Keep Calm!</h5>
-          <p class="card-text">Encante-se com nossa estampa inspirada na aura misteriosa do GhostFace! Um toque de suspense na moda, sem abrir mão do estilo autêntico. Atraia olhares com esse design intrigante.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="./imgs/conexaoverde.png" class="card-img-top" alt="IMG2" width="1200" height="600">
-        <div class="card-body">
-          <h5 class="card-title">Conexão Verde</h5>
-          <p class="card-text">Inspire a esperança com nossa estampa ecoconsciente! Cada traço celebra a natureza e promove a preservação. Vista-se com otimismo, contribua para um futuro verde e estiloso.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="./imgs/falhamatrix.png" class="card-img-top" alt="IMG3" width="1200" height="600">
-        <div class="card-body">
-          <h5 class="card-title">Falha na Matrix</h5>
-          <p class="card-text">Liberte-se com nossa estampa simbólica! Celebre a quebra de correntes e a emancipação do sistema. Vista-se com poder e propósito, expressando sua revolução com estilo marcante.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+    </footer>
+  <script src="./mobile-navbar.js"></script>
+  </body>
 </html>
