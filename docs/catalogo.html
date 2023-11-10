@@ -16,36 +16,28 @@
     
   </head>
   <body>
-    
-    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary" style="z-index: 999;"> <!--HEADER-->
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">
-          <img src="./imgs/Logo.png" alt="Logo" width="160" height="60" class="d-inline-block align-text-top">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
-        <span class="navbar-toggler-icon"></span>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sobre Nós</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contatos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="catalogo.html">Roupas</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
+   <!--HEADER-->
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+      <img src="./imgs/Logo.png" alt="Logo" width="200" height="60" class="d-inline-block align-text-top">
+      </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            <a class="nav-link" href="./catalogo.html">Produtos</a>
+            <a class="nav-link" href="#">Sobre Nós</a>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Procurar</button>
+            </form>
+          </div>
+        </div>  
       </div>
-    </nav>
+  </nav>
 
 <main>
 
@@ -64,7 +56,7 @@
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
           <div class="card">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="37rem" style="background-image:url(./imgs/roupa1.png)"></svg>
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="37rem" style="background-image:url(./imgs/Roupa1.png)"></svg>
             <div class="card-body">
               <p class="card-text"> Manfinity Homens Plus Impressão Floral Gola Simulada Camiseta</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -78,7 +70,7 @@
         </div>
         <div class="col">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="37rem" style="background-image:url(./imgs/roupa2.png)"></svg>
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="37rem" style="background-image:url(./imgs/Roupa2.png)"></svg>
             <div class="card-body">
               <p class="card-text"> Homens Plus Gráfico de Cartoon & Slogan Camiseta Ombro Caído.</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -92,7 +84,7 @@
         </div>
         <div class="col">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="37rem" style="background-image:url(./imgs/roupa3.png)"></svg>
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="37rem" style="background-image:url(./imgs/Roupa3.png)"></svg>
             <div class="card-body">
               <p class="card-text">Manfinity EMRG Homens Plus Gráfico de Slogan & Figura Camiseta</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -111,11 +103,19 @@
 
 </main>
 
-  <footer class="text-body-secondary py-5">
-    <div class="container">
+<!--FOOTER-->
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="#" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-muted">© 2023 Ghost Clothes</span>
     </div>
   </footer>
-  <script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js"></script>
+</div>
+
+  <script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js"></script>]
 
 </body>
 </html>
