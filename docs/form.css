@@ -1,76 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
 body {
-    background-image: url(https://i.imgur.com/fK5Q2QN.jpg);
-    background-size: cover;
-    height: 97vh;
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #0000004d;
 }
+
+.container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+.form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000d7;
+    padding: 1rem;
+}
+
+.form-image img {
+    width: 31rem;
+}
+
 .form {
-    width: 350px;
-    height: 450px;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    backdrop-filter: blur(14px);
-    border: 1px solid #72582c;
-    border-radius: 14px;
+    justify-content: center;
     align-items: center;
+    background-color: #ffffff;
+    padding: 3rem;
 }
-.form h4 {
-    font-family: poppins;
-    font-size: 20px;
-    font-weight: 300;
-    color: #fff;
-}
-.form .login {
+
+.form-header {
+    margin-bottom: 3rem;
     display: flex;
-    flex-direction: column;
-    width: 85%;
-}
-.login input, button {
-    margin: 10px;
-    padding: 10px 15px;
-    border: none;
-    outline: none;
-    border-radius: 60px;
-    font-size: 16px;
-}
-.login input {
-    background-color: #ffffff2e;
-    color: #fff;
-    font-family: poppins;
-    letter-spacing: 1px;
-    text-indent: 35px;
-    background-image: url(https://i.imgur.com/19qASgB.png);
-    background-repeat: no-repeat;
-    background-size: 20px;
-    background-position: 15px;
-}
-.login input:nth-child(2) {
-    background-image: url(https://i.imgur.com/bytsOth.png);
-}
-.login input::placeholder {
-    font-size: 14px;
-    color: #ffffff;
-}
-.login button {
-    background-color: #d38a1c;
-    color: #fff;
-    font-size: 17px;
-    font-family: calibri;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-.suggests {
-    width: 85%;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    font-family: calibri;
-    font-size: 16px;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+}
+
+.login-button button {
+    border: none;
+    background-color: #000000;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button button:hover {
+    background-color: #9b9b9bf1;
+}
+
+.login-button button a {
+    text-decoration: none;
+    font-weight: 500;
     color: #fff;
 }
-.suggests .forgot {
-    color: #d38a1c;
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #ffffff;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}
+
+.input-box input:hover {
+    background-color: rgba(126, 125, 125, 0.685);
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #ebebeb;
+}
+
+.input-box label,
+.gender-title h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 .5rem;
+}
+
+.gender-input {
+    display: flex;
+    align-items: center;
+}
+
+.gender-input input {
+    margin-right: 0.35rem;
+}
+
+.gender-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.continue-button button {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #000000;
+    padding: 0.62rem;
+    border-radius: 5px;
     cursor: pointer;
+}
+
+.continue-button button:hover {
+    background-color: #000000f1;
+}
+
+.continue-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+@media screen and (max-width: 1330px) {
+    .form-image {
+        display: none;
+    }
+    .container {
+        width: 50%;
+    }
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+    .input-group {
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+    .gender-inputs {
+        margin-top: 2rem;
+    }
+    .gender-group {
+        flex-direction: column;
+    }
+    .gender-title h6 {
+        margin: 0;
+    }
+    .gender-input {
+        margin-top: 0.5rem;
+    }
 }
