@@ -36,7 +36,7 @@ body {
 }
 
 .form {
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -148,26 +148,6 @@ body {
     color: #000000c0;
 }
 
-.continue-button button {
-    width: 100%;
-    margin-top: 2.5rem;
-    border: none;
-    background-color: #000000;
-    padding: 0.62rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.continue-button button:hover {
-    background-color: #000000f1;
-}
-
-.continue-button button a {
-    text-decoration: none;
-    font-size: 0.93rem;
-    font-weight: 500;
-    color: #fff;
-}
 
 @media screen and (max-width: 1330px) {
     .form-image {
@@ -206,4 +186,29 @@ body {
     .gender-input {
         margin-top: 0.5rem;
     }
+}
+
+.recuperar-button button {
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #000000;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.recuperar-button button:hover {
+    background-color: #000000f1;
+}
+
+.recuperar-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+.continue {
+    position: relative;
+    left: 20%;
 }
