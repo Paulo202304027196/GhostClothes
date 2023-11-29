@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form.css">
+    <link rel="icon" href="./imgs/ghost1.png" type="image/png">
+    <title>Ghost Clothes - Cadastro</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="./imgs/bg2.png" alt="Background Form">
+        </div>
+        <div class="form">
+            <form action="./submit.php" method="post">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Login</h1>
+                    </div>
+                    <div class="login-button">
+                        <button><a href="./form.html">Cadastre-se</a></button>
+                    </div>
+                </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+                    <div class="recuperar-button">
+                        <button type="button" class="clear"><a href="#">Recuperar Senha</a></button>
+                        <input type="submit" id="continue">
+                    </div>
+                </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./config.js"></script>
+</body>
+</html>
