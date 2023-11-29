@@ -1,7 +1,7 @@
 <?php
     $dbhost = 'Localhost';
     $dbusername = 'root';
-    $dbPassword = '';
+    $dbPassword = '123entrar';
     $dbName = 'GhostClothes';
 
     try {
