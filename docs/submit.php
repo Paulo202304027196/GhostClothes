@@ -1,13 +1,13 @@
 <?php
 require 'config.php';
 
-$name = $_POST['nome'];
-$lastname = $_POST['sobrenome'];
-$birthday = $_POST['data de nascimento'];
+$name = $_POST['name'];
+$lastname = $_POST['lastname'];
+$birthday = $_POST['birthday'];
 $email = $_POST['email'];
 $telefone = $POST['celular'];
 $senha = $_POST['senha'];
-$gender = $_POST['gênero'];
+$gender = $_POST['genero'];
 $
 
 $sql = "INSERT INTO usuarios (name, lastname, birthday, email, telefone, senha, gender) VALUES (:name,:lastname, :birthday, :email, :telefone, :senha, :gênero)";
