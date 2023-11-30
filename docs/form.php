@@ -16,7 +16,7 @@
             <img src="./imgs/bg2.png" alt="Background Form">
         </div>
         <div class="form">
-            <form action="./backend/subtmi.php" method="POST" id="">
+            <form action="form.php" method="POST">
                 <div class="form-header">
                     <div class="title">
                         <h1>Cadastre-se</h1>
@@ -29,12 +29,12 @@
                 <div class="input-group">
                     <div class="input-box">
                         <label for="firstname">Primeiro Nome</label>
-                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                        <input id="firstname" type="text" name="nome" placeholder="Digite seu primeiro nome" required>
                     </div>
 
                     <div class="input-box">
                         <label for="lastname">Sobrenome</label>
-                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                        <input id="lastname" type="text" name="sobrenome" placeholder="Digite seu sobrenome" required>
                     </div>
                     <div class="input-box">
                         <label for="email">E-mail</label>
@@ -45,12 +45,12 @@
 
                     <div class="input-box">
                         <label for="number">Celular</label>
-                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                        <input id="number" type="tel" name="celular" placeholder="(xx) xxxx-xxxx" required>
                     </div>
 
                     <div class="input-box">
                         <label for="password">Senha</label>
-                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                        <input id="password" type="password" name="senha" placeholder="Digite sua senha" required>
                     </div>
 
 
@@ -90,7 +90,7 @@
                 </div>
                 <div class="recuperar-button">
                     <button type="button" class="clear"><a href="#">Recuperar Senha</a></button>
-                    <input type="submit" id="continue">
+                    <input type="submit" id="continue" name="submit">
                 </div>
             </form>
         </div>
